@@ -1,0 +1,16 @@
+// Inputs
+.field-input {
+  border: 0;
+  border-radius: 4px;
+  height: 28px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+// Label
+.label {
+    font-size: 13px;
+    margin-bottom: 3px;
+    display: block;
+    color: $secondary;
+}

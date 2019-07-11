@@ -1,0 +1,51 @@
+ 
+ul.fancy-list {
+    margin: 0;
+    padding: 0;
+    li {
+        background: rgba(255, 255, 255, 10%);
+        padding: 15px;
+        border-radius: 10px;
+        color: $secondary;
+        margin-bottom: 20px;
+        list-style: none;
+    }
+    .counter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 400;
+        font-size: 20px;
+        .nav {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: $secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $dark;
+            font-weight: 500;
+            cursor: pointer;
+            opacity: .8;
+            &:hover {
+                opacity: 1;
+            }
+            &.left {
+                margin-right: 10px;
+                padding-left: 3px;
+                &:before {
+                    content: '-';
+                    font-size: 20px;
+                }
+            }
+            &.right {
+                margin-left: 10px;
+                &:before {
+                    content: '+';
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

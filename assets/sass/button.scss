@@ -1,0 +1,87 @@
+// Botões
+.button {
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    font-size: 13px;
+    &.primary {
+        background: $primary;
+        &:hover, &:focus {
+          background: darken($primary, 10%);
+          outline: none;
+        }
+      &:active, &.loading {
+        background: darken($primary, 20%);
+      }
+    }
+    &.secondary {
+      background: $secondary;
+      color: $dark;
+      &:hover, &:focus {
+        background: darken($secondary, 10%);
+        outline: none;
+      }
+      &:active, &.loading {
+        background: darken($secondary, 20%);
+      }
+    }
+    &.loading {
+      color: transparent;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: progress;
+      &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        border-color: #fff transparent #fff #fff;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &.disabled {
+      cursor: not-allowed;
+      color: $dark;
+    }
+  }
+  
+  .close-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    cursor: pointer;
+    transition: all .3s;
+    &:before {
+      content: 'x';
+      color: $dark;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }

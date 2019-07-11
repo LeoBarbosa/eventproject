@@ -1,21 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap');
 
-$primaryColor: #484655;
+$primary: #ff902c;
+$secondary: white;
+$dark: #484656;
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
 }
+// Links
+a.link {
+    color: $secondary;
+    text-decoration: none;
+    &.underline {
+      text-decoration: underline;
+    }
+}
 
+  // Titulo da Seção
+.title-section {
+    display: flex;
+    align-items: center;
+    color: $secondary;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    padding-left: 20px;
+    &:before {
+      content: '';
+      width: 3px;
+      height: 100%;
+      background-color: $primary;
+      position: absolute;
+      left: 0;
+    }
+}
 .container-fluid {
     padding: 0 55px;
 }
 section {
     padding: 120px 0;
+    position: relative;
     article {
-        color: $primaryColor;
+        color: $dark;
     }
     &.dark-theme {
         background: #35333d; /* Old browsers */
@@ -24,9 +53,9 @@ section {
         background: linear-gradient(to bottom,  #35333d 0%,#100f12 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35333d', endColorstr='#100f12',GradientType=0 ); /* IE6-9 */
         article {
-            color: white;
+            color: $secondary;
             * {
-                fill: white;
+                fill: $secondary;
             }
         }
     } 
@@ -61,7 +90,6 @@ article {
             svg {
                 margin-right: 10px;
                 width: 16px;
-                fill: $primaryColor;
             }
         }
     }

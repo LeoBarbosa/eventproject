@@ -18,7 +18,7 @@
         </figure>
         <article>
             <h1>Lorem ipsum dolor sit.</h1>
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h3>Lorem ipsum dolor sit.</h3>
             <div class="infos">
                 <p class="local">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -45,7 +45,7 @@
     <section>
         <article class="container-fluid">
             <h1>Lorem ipsum dolor sit.</h1>
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h3>Lorem ipsum dolor sit.</h3>
             <div class="infos">
                 <p class="local">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -160,6 +160,16 @@
             </div>
         </div>
     </section>
+    <script>
+        document.querySelector('.float-panel button').addEventListener('click', function () {
+            var classString = document.querySelector('.float-panel button').className; // returns the string of all the classes for myDiv
+            var newClass = classString.concat(" loading"); // Adds the class "main__section" to the string (notice the leading space)
+            document.querySelector('.float-panel button').className = newClass;
+            setTimeout(function() {
+                window.location = 'index2.html';
+            }, 1000)
+        });
+    </script>
 </body>
 
 </html>

@@ -60,7 +60,7 @@
       color: $dark;
     }
   }
-  
+
   .close-button {
     width: 30px;
     height: 30px;
@@ -74,12 +74,15 @@
     opacity: .6;
     cursor: pointer;
     transition: all .3s;
+    position: absolute;
+    right: 0;
+    top: 0;
     &:before {
       content: 'x';
       color: $dark;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
-      font-family: sans-serif;
+      font-family: monospace;
     }
     &:hover {
       opacity: 1;

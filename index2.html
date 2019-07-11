@@ -18,7 +18,7 @@
         </figure>
         <article>
             <h1>Lorem ipsum dolor sit.</h1>
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h3>Lorem ipsum dolor sit.</h3>
             <div class="infos">
                 <p class="local">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -43,6 +43,7 @@
         <figure class="main-image" style="background-image: url('./assets/images/event-image-example.jpg');"></figure>
     </header>
     <section class="dark-theme">
+        <button class="close-button"></button>
         <article class="container-fluid">
             <div class="col-md-6">
                 <h2>Lorem ipsum dolor sit.</h2>
@@ -71,34 +72,13 @@
                     debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
                     natus a eos harum nihil!
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                    voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                    quibusdam quis impedit eligendi cumque!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                    debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                    natus a eos harum nihil!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                    voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                    quibusdam quis impedit eligendi cumque!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                    debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                    natus a eos harum nihil!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                    voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                    quibusdam quis impedit eligendi cumque!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                    debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                    natus a eos harum nihil!
-                </p>
+                <br/>
+                <br/>
+                <button class="button primary">Lorem ipsum</button>
             </div>
             <div class="col-md-6">
                     <h2>Lorem ipsum dolor sit.</h2>
-    
+
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
                         voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
@@ -123,77 +103,26 @@
                         debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
                         natus a eos harum nihil!
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                        voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                        quibusdam quis impedit eligendi cumque!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                        debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                        natus a eos harum nihil!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                        voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                        quibusdam quis impedit eligendi cumque!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                        debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                        natus a eos harum nihil!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique obcaecati eius explicabo incidunt
-                        voluptatem itaque deserunt nobis necessitatibus vero veritatis corrupti suscipit debitis, quod aut
-                        quibusdam quis impedit eligendi cumque!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum repudiandae corporis
-                        debitis ea magnam fugiat temporibus porro! Ad accusamus facilis commodi voluptate fuga voluptatibus,
-                        natus a eos harum nihil!
-                    </p>
+                    <br/>
+                    <br/>
+                    <button class="button secondary pull-right">Lorem ipsum</button>
                 </div>
         </article>
-        <div class="float-panel">
-            <h3 class="float-panel-title">
-                Lorem ipsum
-            </h3>
-            <div class="float-panel-content">
-                <ul class="fancy-list">
-                    <li>
-                        <div class="row">
-                            <div class="col-md-8">
-                                Lorem ipsum lorem <br />
-                                Lorem ipsum lorem <br />
-                                Lorem ipsum lorem
-                            </div>
-                            <div class="col-md-4">
-                                <div class="counter">
-                                    <div class="nav left"></div>
-                                    0
-                                    <div class="nav right"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-8">
-                                Lorem ipsum lorem <br />
-                                Lorem ipsum lorem <br />
-                                Lorem ipsum lorem
-                            </div>
-                            <div class="col-md-4">
-                                <div class="counter">
-                                    <div class="nav left"></div>
-                                    0
-                                    <div class="nav right"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <button class="button primary pull-right">
-                    Lorem ipsum
-                </button>
-            </div>
-        </div>
     </section>
+    <script>
+        document.querySelector('.button.primary').addEventListener('click', function() {
+            var classString = document.querySelector('.button.primary').className; // returns the string of all the classes for myDiv
+            var newClass = classString.concat(" loading"); // Adds the class "main__section" to the string (notice the leading space)
+            document.querySelector('.button.primary').className = newClass;
+            setTimeout(function() {
+                window.location = 'index3.html';
+            }, 1000)
+        });
+
+        document.querySelector('.close-button').addEventListener('click', function() {
+            window.location = 'index.html';
+        });
+    </script>
 </body>
 
 </html>

@@ -52,13 +52,14 @@ section {
         background: -webkit-linear-gradient(top,  #35333d 0%,#100f12 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom,  #35333d 0%,#100f12 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35333d', endColorstr='#100f12',GradientType=0 ); /* IE6-9 */
+        min-height: calc(100vh - 355px);
         article {
             color: $secondary;
             * {
                 fill: $secondary;
             }
         }
-    } 
+    }
 }
 article {
     h1 {
@@ -68,8 +69,16 @@ article {
         color: unset;
     }
 
+
     h2 {
-        font-size: 27px;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 30px 0;
+        color: unset;
+    }
+
+    h3 {
+        font-size: 25px;
         font-weight: 400;
         margin: 0 0 10px 0;
         color: unset;
